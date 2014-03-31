@@ -1,0 +1,21 @@
+
+<launch>
+	<group ns="rostld_test">
+        <node name="testview" pkg="rqt_gui" type="rqt_gui"
+            respawn="false"
+            output="screen"
+            args="--perspective-file $(find rostld)/launch/test.perspective"
+        />
+        <node name="tldtracker" pkg="rostld" type="tldtracker"
+            launch-prefix="xterm -e gdb --ex run --args"
+          >
+            <!-- -->
+        </node>
+        <node name="camera" pkg="rostld" type="camera_broadcaster"
+            launch-prefix="xterm -e gdb --ex run --args"
+          >
+            <param name="avipath" value="~/hostworkspace/sep/rostld/input.avi" />
+        </node>
+    </group>
+</launch>
+

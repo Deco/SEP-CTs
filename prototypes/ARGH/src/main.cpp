@@ -187,7 +187,7 @@ public:
             double x = fmod(360-drAlpha+180, 360.0)-thermalPixelSizeYaw/2.0;
             double y = (drGamma)+90+thermalObservedPitchRange/2+(pixelI-4)*thermalPixelSizePitch;
             double w = thermalPixelSizeYaw, h = thermalPixelSizePitch;
-
+            
             // RectTree<SensorReading>::Rect rect(
             //   (double)rand()/(double)RAND_MAX*(360.0-20.0),
             //   (double)rand()/(double)RAND_MAX*(thermalObservedPitchRange-20.0),
@@ -288,7 +288,8 @@ public:
       }
     }
 
-    std::deque< sf::Vector2<int> >::iterator iter = updatedPixels.begin();
+    //std::deque< sf::Vector2<int> >::iterator iter = updatedPixels.begin();
+    auto iter = updatedPixels.begin();
     for(; iter != updatedPixels.end(); iter++) {
       int px = iter->x, py = iter->y;
 

@@ -205,27 +205,32 @@ public:
 
 public:
   inline RectTree(N x, N y, N w, N h, int maxDepth)
-    : rootNode(*this, maxDepth, x, y, w, h)
   {
-    // 
+    rootNodePtr = new Node(*this, maxDepth, x, y, w, h);
+  }
+
+  inline void reset(N x, N y, N w, N h, int maxDepth)
+  {
+    delete rootNodePtr;
+    rootNodePtr = new Node(*this, maxDepth, x, y, w, h);
   }
 
   inline bool add(Rect &rect) {
     //std::cout << "add: ";
-    bool res = rootNode.add(rect);
+    bool res = rootNodePtr->add(rect);
     //std::cout << std::endl;
     return res;
   }
   inline void retrieveAllRects(std::vector<RectResult> &resList) {
-    rootNode.retrieveAllRects(resList);
+    rootNodePtr->retrieveAllRects(resList);
   }
   inline void findRectsAtPoint(N px, N py, std::vector<RectResult> &resList)
   {
-    rootNode.findRectsAtPoint(px, py, resList);
+    rootNodePtr->findRectsAtPoint(px, py, resList);
   }
   inline Node &getNodeAtPoint(N px, N py)
   {
-    Node *currNode = &rootNode;
+    Node *currNode = rootNodePtr;
     int depth = 0;
     while(!currNode->isLeaf() && depth < 50) {
       currNode = (
@@ -256,7 +261,7 @@ public:
   }
 
 private:
-  Node rootNode;
+  Node *rootNodePtr;
   //std::vector<Node> nodeList;
 };
 

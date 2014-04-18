@@ -286,6 +286,12 @@ public:
           updatedPixels.push_back(sf::Vector2<int>(px, py));
         }
       }
+    } else if(sf::Keyboard::isKeyPressed(sf::Keyboard::C)) {
+      /*std::vector<RectTree<SensorReading>::RectResult> resList;
+      readingsTree.retrieveAllRects(resList);
+      readingsTree.removeResults(resList);*/
+      viewImage.clear();
+      readingsTree.reset(0.0, 0.0, 360.0, thermalObservedPitchRange, 4);
     }
 
     //std::deque< sf::Vector2<int> >::iterator iter = updatedPixels.begin();

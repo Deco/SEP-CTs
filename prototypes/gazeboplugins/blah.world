@@ -1,0 +1,45 @@
+<?xml version="1.0"?> 
+<sdf version="1.4">
+  <world name="default">
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://camera</uri>uri>
+      <static>true</static>
+      <pose>0.2 0 0.2 0 0 0</pose>
+      <plugin name="camera_feed" filename="build/libcamera_feed.so"/>
+    </include>
+
+    <model name="box">
+      <pose>10 -5 1 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+
+      <plugin name="model_push" filename="build/libmodel_push.so"/>
+      
+    </model>  
+
+  </world>
+</sdf>

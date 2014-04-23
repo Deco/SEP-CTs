@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/samholmes/gazebo_plugin_tutorial/build/camera_feed.cc
+sensors/DepthCameraSensor.hh
+/home/samholmes/gazebo_plugin_tutorial/build/sensors/DepthCameraSensor.hh
+plugins/CameraPlugin.hh
+/home/samholmes/gazebo_plugin_tutorial/build/plugins/CameraPlugin.hh
+

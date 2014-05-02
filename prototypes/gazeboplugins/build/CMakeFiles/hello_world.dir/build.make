@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cts/hostworkspace/gazebo_plugin_tutorial
+CMAKE_SOURCE_DIR = /home/samholmes/SEP-CTs/prototypes/gazeboplugins
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cts/hostworkspace/gazebo_plugin_tutorial/build
+CMAKE_BINARY_DIR = /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hello_world.dir/depend.make
@@ -48,17 +48,17 @@ include CMakeFiles/hello_world.dir/flags.make
 
 CMakeFiles/hello_world.dir/hello_world.cc.o: CMakeFiles/hello_world.dir/flags.make
 CMakeFiles/hello_world.dir/hello_world.cc.o: ../hello_world.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/hello_world.dir/hello_world.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hello_world.dir/hello_world.cc.o -c /home/cts/hostworkspace/gazebo_plugin_tutorial/hello_world.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/hello_world.dir/hello_world.cc.o -c /home/samholmes/SEP-CTs/prototypes/gazeboplugins/hello_world.cc
 
 CMakeFiles/hello_world.dir/hello_world.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_world.dir/hello_world.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/cts/hostworkspace/gazebo_plugin_tutorial/hello_world.cc > CMakeFiles/hello_world.dir/hello_world.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/samholmes/SEP-CTs/prototypes/gazeboplugins/hello_world.cc > CMakeFiles/hello_world.dir/hello_world.cc.i
 
 CMakeFiles/hello_world.dir/hello_world.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_world.dir/hello_world.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/cts/hostworkspace/gazebo_plugin_tutorial/hello_world.cc -o CMakeFiles/hello_world.dir/hello_world.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/samholmes/SEP-CTs/prototypes/gazeboplugins/hello_world.cc -o CMakeFiles/hello_world.dir/hello_world.cc.s
 
 CMakeFiles/hello_world.dir/hello_world.cc.o.requires:
 .PHONY : CMakeFiles/hello_world.dir/hello_world.cc.o.requires
@@ -95,6 +95,6 @@ CMakeFiles/hello_world.dir/clean:
 .PHONY : CMakeFiles/hello_world.dir/clean
 
 CMakeFiles/hello_world.dir/depend:
-	cd /home/cts/hostworkspace/gazebo_plugin_tutorial/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cts/hostworkspace/gazebo_plugin_tutorial /home/cts/hostworkspace/gazebo_plugin_tutorial /home/cts/hostworkspace/gazebo_plugin_tutorial/build /home/cts/hostworkspace/gazebo_plugin_tutorial/build /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles/hello_world.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/samholmes/SEP-CTs/prototypes/gazeboplugins /home/samholmes/SEP-CTs/prototypes/gazeboplugins /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles/hello_world.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hello_world.dir/depend
 

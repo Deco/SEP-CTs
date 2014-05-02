@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cts/hostworkspace/gazebo_plugin_tutorial/hello_world.cc
+/home/samholmes/SEP-CTs/prototypes/gazeboplugins/hello_world.cc
 gazebo/gazebo.hh
 -
 

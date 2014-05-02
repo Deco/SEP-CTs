@@ -11,8 +11,8 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/CMakeCCompiler.cmake"
   "CMakeFiles/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeSystem.cmake"
-  "/opt/ros/hydro/share/OpenCV/OpenCVConfig-version.cmake"
-  "/opt/ros/hydro/share/OpenCV/OpenCVConfig.cmake"
+  "/usr/share/OpenCV/OpenCVConfig-version.cmake"
+  "/usr/share/OpenCV/OpenCVConfig.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake"
@@ -46,4 +46,5 @@ SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/camera_feed.dir/DependInfo.cmake"
   "CMakeFiles/hello_world.dir/DependInfo.cmake"
   "CMakeFiles/model_push.dir/DependInfo.cmake"
+  "CMakeFiles/object_pos.dir/DependInfo.cmake"
   )

@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cts/hostworkspace/gazebo_plugin_tutorial
+CMAKE_SOURCE_DIR = /home/samholmes/SEP-CTs/prototypes/gazeboplugins
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cts/hostworkspace/gazebo_plugin_tutorial/build
+CMAKE_BINARY_DIR = /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/camera_feed.dir/depend.make
@@ -47,18 +47,18 @@ include CMakeFiles/camera_feed.dir/progress.make
 include CMakeFiles/camera_feed.dir/flags.make
 
 CMakeFiles/camera_feed.dir/camera_feed.cc.o: CMakeFiles/camera_feed.dir/flags.make
-CMakeFiles/camera_feed.dir/camera_feed.cc.o: camera_feed.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/camera_feed.dir/camera_feed.cc.o: ../camera_feed.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/camera_feed.dir/camera_feed.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/camera_feed.dir/camera_feed.cc.o -c /home/cts/hostworkspace/gazebo_plugin_tutorial/build/camera_feed.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/camera_feed.dir/camera_feed.cc.o -c /home/samholmes/SEP-CTs/prototypes/gazeboplugins/camera_feed.cc
 
 CMakeFiles/camera_feed.dir/camera_feed.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/camera_feed.dir/camera_feed.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/cts/hostworkspace/gazebo_plugin_tutorial/build/camera_feed.cc > CMakeFiles/camera_feed.dir/camera_feed.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/samholmes/SEP-CTs/prototypes/gazeboplugins/camera_feed.cc > CMakeFiles/camera_feed.dir/camera_feed.cc.i
 
 CMakeFiles/camera_feed.dir/camera_feed.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camera_feed.dir/camera_feed.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/cts/hostworkspace/gazebo_plugin_tutorial/build/camera_feed.cc -o CMakeFiles/camera_feed.dir/camera_feed.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/samholmes/SEP-CTs/prototypes/gazeboplugins/camera_feed.cc -o CMakeFiles/camera_feed.dir/camera_feed.cc.s
 
 CMakeFiles/camera_feed.dir/camera_feed.cc.o.requires:
 .PHONY : CMakeFiles/camera_feed.dir/camera_feed.cc.o.requires
@@ -78,24 +78,6 @@ camera_feed_EXTERNAL_OBJECTS =
 
 libcamera_feed.so: CMakeFiles/camera_feed.dir/camera_feed.cc.o
 libcamera_feed.so: /usr/lib/libboost_system-mt.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_calib3d.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_contrib.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_core.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_features2d.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_flann.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_gpu.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_highgui.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_imgproc.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_legacy.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_ml.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_nonfree.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_objdetect.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_photo.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_stitching.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_superres.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_ts.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_video.so
-libcamera_feed.so: /opt/ros/hydro/lib/libopencv_videostab.so
 libcamera_feed.so: CMakeFiles/camera_feed.dir/build.make
 libcamera_feed.so: CMakeFiles/camera_feed.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libcamera_feed.so"
@@ -113,6 +95,6 @@ CMakeFiles/camera_feed.dir/clean:
 .PHONY : CMakeFiles/camera_feed.dir/clean
 
 CMakeFiles/camera_feed.dir/depend:
-	cd /home/cts/hostworkspace/gazebo_plugin_tutorial/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cts/hostworkspace/gazebo_plugin_tutorial /home/cts/hostworkspace/gazebo_plugin_tutorial /home/cts/hostworkspace/gazebo_plugin_tutorial/build /home/cts/hostworkspace/gazebo_plugin_tutorial/build /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles/camera_feed.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/samholmes/SEP-CTs/prototypes/gazeboplugins /home/samholmes/SEP-CTs/prototypes/gazeboplugins /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles/camera_feed.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/camera_feed.dir/depend
 

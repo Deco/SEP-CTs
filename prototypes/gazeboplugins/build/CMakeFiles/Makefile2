@@ -44,10 +44,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cts/hostworkspace/gazebo_plugin_tutorial
+CMAKE_SOURCE_DIR = /home/samholmes/SEP-CTs/prototypes/gazeboplugins
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cts/hostworkspace/gazebo_plugin_tutorial/build
+CMAKE_BINARY_DIR = /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/camera_feed.dir
@@ -56,7 +56,7 @@ CMAKE_BINARY_DIR = /home/cts/hostworkspace/gazebo_plugin_tutorial/build
 CMakeFiles/camera_feed.dir/all:
 	$(MAKE) -f CMakeFiles/camera_feed.dir/build.make CMakeFiles/camera_feed.dir/depend
 	$(MAKE) -f CMakeFiles/camera_feed.dir/build.make CMakeFiles/camera_feed.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles  1
 	@echo "Built target camera_feed"
 .PHONY : CMakeFiles/camera_feed.dir/all
 
@@ -66,9 +66,9 @@ all: CMakeFiles/camera_feed.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/camera_feed.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/camera_feed.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles 0
 .PHONY : CMakeFiles/camera_feed.dir/rule
 
 # Convenience name for target.
@@ -91,7 +91,7 @@ clean: CMakeFiles/camera_feed.dir/clean
 CMakeFiles/hello_world.dir/all:
 	$(MAKE) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/depend
 	$(MAKE) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles  2
 	@echo "Built target hello_world"
 .PHONY : CMakeFiles/hello_world.dir/all
 
@@ -101,9 +101,9 @@ all: CMakeFiles/hello_world.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hello_world.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hello_world.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles 0
 .PHONY : CMakeFiles/hello_world.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ clean: CMakeFiles/hello_world.dir/clean
 CMakeFiles/model_push.dir/all:
 	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/depend
 	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles  3
 	@echo "Built target model_push"
 .PHONY : CMakeFiles/model_push.dir/all
 
@@ -136,9 +136,9 @@ all: CMakeFiles/model_push.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/model_push.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/model_push.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles 0
 .PHONY : CMakeFiles/model_push.dir/rule
 
 # Convenience name for target.
@@ -152,6 +152,41 @@ CMakeFiles/model_push.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/model_push.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/object_pos.dir
+
+# All Build rule for target.
+CMakeFiles/object_pos.dir/all:
+	$(MAKE) -f CMakeFiles/object_pos.dir/build.make CMakeFiles/object_pos.dir/depend
+	$(MAKE) -f CMakeFiles/object_pos.dir/build.make CMakeFiles/object_pos.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles  4
+	@echo "Built target object_pos"
+.PHONY : CMakeFiles/object_pos.dir/all
+
+# Include target in all.
+all: CMakeFiles/object_pos.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/object_pos.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/object_pos.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles 0
+.PHONY : CMakeFiles/object_pos.dir/rule
+
+# Convenience name for target.
+object_pos: CMakeFiles/object_pos.dir/rule
+.PHONY : object_pos
+
+# clean rule for target.
+CMakeFiles/object_pos.dir/clean:
+	$(MAKE) -f CMakeFiles/object_pos.dir/build.make CMakeFiles/object_pos.dir/clean
+.PHONY : CMakeFiles/object_pos.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/object_pos.dir/clean
 .PHONY : clean
 
 #=============================================================================

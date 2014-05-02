@@ -1,3 +1,4 @@
-/home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles/camera_feed.dir
-/home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles/hello_world.dir
-/home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles/model_push.dir
+/home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles/camera_feed.dir
+/home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles/hello_world.dir
+/home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles/model_push.dir
+/home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles/object_pos.dir

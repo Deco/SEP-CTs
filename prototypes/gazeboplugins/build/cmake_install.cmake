@@ -1,4 +1,4 @@
-# Install script for directory: /home/cts/hostworkspace/gazebo_plugin_tutorial
+# Install script for directory: /home/samholmes/SEP-CTs/prototypes/gazeboplugins
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/cts/hostworkspace/gazebo_plugin_tutorial/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/cts/hostworkspace/gazebo_plugin_tutorial/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

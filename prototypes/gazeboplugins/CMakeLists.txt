@@ -20,6 +20,10 @@ target_link_libraries(hello_world ${GAZEBO_LIBRARIES} ${Boost_LIBRARIES})
 add_library(model_push SHARED model_push.cc)
 target_link_libraries(model_push ${GAZEBO_LIBRARIES} ${Boost_LIBRARIES})
 
+add_library(object_pos SHARED object_pos.cc)
+target_link_libraries(object_pos ${GAZEBO_LIBRARIES} ${Boost_LIBRARIES})
+
+
 add_library(camera_feed SHARED camera_feed.cc)
 target_link_libraries(camera_feed ${GAZEBO_LIBRARIES} ${Boost_LIBRARIES})
 target_link_libraries(camera_feed ${OpenCV_LIBS} )

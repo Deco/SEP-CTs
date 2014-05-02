@@ -2,27 +2,29 @@
 <sdf version="1.4">
   <world name="default">
 
+    <physics type='ode'>
+      <real_time_update_rate>60</real_time_update_rate>
+    </physics>
+    
+    <plugin name="object_pos" filename="build/libobject_pos.so" />
+
     <include>
-      <uri>model://ground_plane</uri>
+      <uri>model://asphalt_plane</uri>
     </include>
 
     <include>
       <uri>model://sun</uri>
     </include>
 
-    <model name="camerabox">
+  *<model name="camerabox">
       <include>
         <uri>model://camera</uri>
       </include>
-      <pose>0 0 1 0 0 0</pose>
-      <static>true</static>
-
+      <pose>0 0 0.05 0 0 0</pose>
       <link name="link">
-
         <sensor
           name="camera" type="camera" 
         >
-          <pose>0 0 1 0 0 0</pose>
           <camera>
             <horizontal_fov>1.04719755</horizontal_fov>
             <image>
@@ -34,40 +36,21 @@
               <near>0.1</near>
               <far>50</far>
             </clip>
-            <save enabled="true">
-              <path>/home/cts/wtfbbq</path>
+            <save enabled="false">
+              <path>/home/samholmes/Desktop/output</path>
             </save>
           </camera>
-
           <plugin name="camera_feed" filename="build/libcamera_feed.so" />
         </sensor>
 
       </link>
-
-      <plugin name="model_push" filename="build/libmodel_push.so"/>
-
     </model>
 
     <model name="box">
-      <pose>10 -5 1 0 0 0</pose>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>1 1 1</size>
-            </box>
-          </geometry>
-        </collision>
-
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>1 1 1</size>
-            </box>
-          </geometry>
-        </visual>
-      </link>
-
+      <pose>20 -10 1 -1.5 0 1.5</pose>
+      <include>
+        <uri>model://utility_cart</uri>
+      </include>
       <plugin name="model_push" filename="build/libmodel_push.so"/>
 
     </model>  

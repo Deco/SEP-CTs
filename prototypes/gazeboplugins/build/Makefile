@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cts/hostworkspace/gazebo_plugin_tutorial
+CMAKE_SOURCE_DIR = /home/samholmes/SEP-CTs/prototypes/gazeboplugins
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cts/hostworkspace/gazebo_plugin_tutorial/build
+CMAKE_BINARY_DIR = /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,9 +66,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -133,6 +133,19 @@ model_push: cmake_check_build_system
 model_push/fast:
 	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/build
 .PHONY : model_push/fast
+
+#=============================================================================
+# Target rules for targets named object_pos
+
+# Build rule for target.
+object_pos: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_pos
+.PHONY : object_pos
+
+# fast build rule for target.
+object_pos/fast:
+	$(MAKE) -f CMakeFiles/object_pos.dir/build.make CMakeFiles/object_pos.dir/build
+.PHONY : object_pos/fast
 
 camera_feed.o: camera_feed.cc.o
 .PHONY : camera_feed.o
@@ -206,6 +219,30 @@ model_push.cc.s:
 	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/model_push.cc.s
 .PHONY : model_push.cc.s
 
+object_pos.o: object_pos.cc.o
+.PHONY : object_pos.o
+
+# target to build an object file
+object_pos.cc.o:
+	$(MAKE) -f CMakeFiles/object_pos.dir/build.make CMakeFiles/object_pos.dir/object_pos.cc.o
+.PHONY : object_pos.cc.o
+
+object_pos.i: object_pos.cc.i
+.PHONY : object_pos.i
+
+# target to preprocess a source file
+object_pos.cc.i:
+	$(MAKE) -f CMakeFiles/object_pos.dir/build.make CMakeFiles/object_pos.dir/object_pos.cc.i
+.PHONY : object_pos.cc.i
+
+object_pos.s: object_pos.cc.s
+.PHONY : object_pos.s
+
+# target to generate assembly for a file
+object_pos.cc.s:
+	$(MAKE) -f CMakeFiles/object_pos.dir/build.make CMakeFiles/object_pos.dir/object_pos.cc.s
+.PHONY : object_pos.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -216,6 +253,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... hello_world"
 	@echo "... model_push"
+	@echo "... object_pos"
 	@echo "... rebuild_cache"
 	@echo "... camera_feed.o"
 	@echo "... camera_feed.i"
@@ -226,6 +264,9 @@ help:
 	@echo "... model_push.o"
 	@echo "... model_push.i"
 	@echo "... model_push.s"
+	@echo "... object_pos.o"
+	@echo "... object_pos.i"
+	@echo "... object_pos.s"
 .PHONY : help
 
 

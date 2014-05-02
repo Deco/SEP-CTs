@@ -27,7 +27,7 @@ namespace gazebo
       static bool isPos = true;
       counter++;
 
-      if (counter > 5000)
+      if (counter > 400)
       {
         counter = 0;
         if (isPos)
@@ -38,9 +38,9 @@ namespace gazebo
      
 
       if (isPos)
-        this->model->SetLinearVel(math::Vector3(0, 3, 0));
+        this->model->SetLinearVel(math::Vector3(0, 50, 0));
       else
-        this->model->SetLinearVel(math::Vector3(0, -3, 0));
+        this->model->SetLinearVel(math::Vector3(0, -50, 0));
 
     }
 

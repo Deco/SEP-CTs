@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cts/hostworkspace/gazebo_plugin_tutorial
+CMAKE_SOURCE_DIR = /home/samholmes/SEP-CTs/prototypes/gazeboplugins
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cts/hostworkspace/gazebo_plugin_tutorial/build
+CMAKE_BINARY_DIR = /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/model_push.dir/depend.make
@@ -47,18 +47,18 @@ include CMakeFiles/model_push.dir/progress.make
 include CMakeFiles/model_push.dir/flags.make
 
 CMakeFiles/model_push.dir/model_push.cc.o: CMakeFiles/model_push.dir/flags.make
-CMakeFiles/model_push.dir/model_push.cc.o: model_push.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/model_push.dir/model_push.cc.o: ../model_push.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/model_push.dir/model_push.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/model_push.dir/model_push.cc.o -c /home/cts/hostworkspace/gazebo_plugin_tutorial/build/model_push.cc
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/model_push.dir/model_push.cc.o -c /home/samholmes/SEP-CTs/prototypes/gazeboplugins/model_push.cc
 
 CMakeFiles/model_push.dir/model_push.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/model_push.dir/model_push.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/cts/hostworkspace/gazebo_plugin_tutorial/build/model_push.cc > CMakeFiles/model_push.dir/model_push.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/samholmes/SEP-CTs/prototypes/gazeboplugins/model_push.cc > CMakeFiles/model_push.dir/model_push.cc.i
 
 CMakeFiles/model_push.dir/model_push.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/model_push.dir/model_push.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/cts/hostworkspace/gazebo_plugin_tutorial/build/model_push.cc -o CMakeFiles/model_push.dir/model_push.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/samholmes/SEP-CTs/prototypes/gazeboplugins/model_push.cc -o CMakeFiles/model_push.dir/model_push.cc.s
 
 CMakeFiles/model_push.dir/model_push.cc.o.requires:
 .PHONY : CMakeFiles/model_push.dir/model_push.cc.o.requires
@@ -95,6 +95,6 @@ CMakeFiles/model_push.dir/clean:
 .PHONY : CMakeFiles/model_push.dir/clean
 
 CMakeFiles/model_push.dir/depend:
-	cd /home/cts/hostworkspace/gazebo_plugin_tutorial/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cts/hostworkspace/gazebo_plugin_tutorial /home/cts/hostworkspace/gazebo_plugin_tutorial /home/cts/hostworkspace/gazebo_plugin_tutorial/build /home/cts/hostworkspace/gazebo_plugin_tutorial/build /home/cts/hostworkspace/gazebo_plugin_tutorial/build/CMakeFiles/model_push.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/samholmes/SEP-CTs/prototypes/gazeboplugins /home/samholmes/SEP-CTs/prototypes/gazeboplugins /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles/model_push.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/model_push.dir/depend
 

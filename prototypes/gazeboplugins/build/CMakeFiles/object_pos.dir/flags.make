@@ -4,5 +4,5 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS = -fPIC -I/usr/include/gazebo-2.2 -I/usr/include/sdformat-1.4 -I/usr/include/opencv   
 
-CXX_DEFINES = -Dhello_world_EXPORTS
+CXX_DEFINES = -Dobject_pos_EXPORTS
 

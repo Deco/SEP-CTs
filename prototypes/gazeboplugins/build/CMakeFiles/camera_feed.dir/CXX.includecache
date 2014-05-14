@@ -11,8 +11,6 @@ camera_feed.hh
 /home/samholmes/SEP-CTs/prototypes/gazeboplugins/camera_feed.hh
 gazebo/sensors/DepthCameraSensor.hh
 -
-sstream
--
 
 /home/samholmes/SEP-CTs/prototypes/gazeboplugins/camera_feed.hh
 gazebo/common/Plugin.hh
@@ -26,10 +24,6 @@ gazebo/gazebo.hh
 opencv2/core/core.hpp
 -
 opencv2/highgui/highgui.hpp
--
-iostream
--
-fstream
 -
 
 /usr/include/gazebo-2.2/gazebo/Master.hh

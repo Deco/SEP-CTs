@@ -185,6 +185,9 @@ Project_SOURCE_DIR:STATIC=/home/samholmes/SEP-CTs/prototypes/gazeboplugins
 camera_feed_LIB_DEPENDS:STATIC=general;gazebo_transport;general;gazebo_physics;general;gazebo_sensors;general;gazebo_rendering;general;gazebo_gui;general;sdformat;general;gazebo_msgs;general;gazebo_math;general;gazebo_common;general;gazebo;general;/usr/lib/libboost_system-mt.so;general;opencv_gpu;general;opencv_contrib;general;opencv_legacy;general;opencv_objdetect;general;opencv_calib3d;general;opencv_features2d;general;opencv_video;general;opencv_highgui;general;opencv_ml;general;opencv_imgproc;general;opencv_flann;general;opencv_core;
 
 //Dependencies for the target
+camera_push_LIB_DEPENDS:STATIC=general;gazebo_transport;general;gazebo_physics;general;gazebo_sensors;general;gazebo_rendering;general;gazebo_gui;general;sdformat;general;gazebo_msgs;general;gazebo_math;general;gazebo_common;general;gazebo;general;/usr/lib/libboost_system-mt.so;
+
+//Dependencies for the target
 hello_world_LIB_DEPENDS:STATIC=general;gazebo_transport;general;gazebo_physics;general;gazebo_sensors;general;gazebo_rendering;general;gazebo_gui;general;sdformat;general;gazebo_msgs;general;gazebo_math;general;gazebo_common;general;gazebo;general;/usr/lib/libboost_system-mt.so;
 
 //Dependencies for the target

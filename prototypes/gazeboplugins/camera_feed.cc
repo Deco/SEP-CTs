@@ -1,7 +1,6 @@
 //test
 #include "camera_feed.hh"
 #include <gazebo/sensors/DepthCameraSensor.hh>
-#include <sstream>
 
 using namespace gazebo;
 GZ_REGISTER_SENSOR_PLUGIN(CameraPlugin)
@@ -14,9 +13,6 @@ CameraPlugin::CameraPlugin() : SensorPlugin()
 /////////////////////////////////////////////////
 void CameraPlugin::Load(sensors::SensorPtr _sensor, sdf::ElementPtr /*_sdf*/)
 {
-  this->objPosY.open("/home/samholmes/SEP-CTs/prototypes/gazeboplugins/objPosY.txt");
-  this->objPosZ.open("/home/samholmes/SEP-CTs/prototypes/gazeboplugins/objPosZ.txt");
-
   if (!_sensor)
     gzerr << "Invalid sensor pointer.\n";
 
@@ -54,45 +50,6 @@ void CameraPlugin::Load(sensors::SensorPtr _sensor, sdf::ElementPtr /*_sdf*/)
   );
 }
 
-
-float Extrapolate(float vals[])
-{
-  float sum = 0;
-  float lastPos = vals[5];
-  float temp = 0;
-  for (int i = 0; i < 5; i++)
-  {
-    temp = vals[i+1] - vals[i];
-    sum += temp;
-  }
-  sum+=temp;
-  sum = sum/1.0;
-  float nextPos = lastPos + sum;
-
-  return nextPos;
-}
-
-float Interpolate(float nextPos, math::Pose pose, int y)
-{
-  std::cout << "Rotations XYZ : " << std::endl;
-  std::cout << pose.rot.x << " " << pose.rot.y << " " << pose.rot.z << " " << std::endl;
-  float angle = 0;
-  if (y == 1)
-  {
-    float xDif = pose.pos.x - 20;
-    float yDif = pose.pos.y - nextPos;
-    float hypo = sqrt(pow(xDif, 2) + pow(yDif, 2));
-  
-    angle = asin(yDif/hypo);
-  }
-  else
-  {
-    //Z movement
-  }
-  return angle;
-}
-
-
 /////////////////////////////////////////////////
 void CameraPlugin::OnNewFrame(const unsigned char * _image,
                               unsigned int _width,
@@ -100,40 +57,13 @@ void CameraPlugin::OnNewFrame(const unsigned char * _image,
                               unsigned int _depth,
                               const std::string &_format)
 {
-  if (getline(this->objPosY, this->curVals))
-  {
-    this->yPosArray[this->counter] = atof(this->curVals.c_str());
-  }
-  if (getline(this->objPosZ, this->curVals))
-  {
-    this->zPosArray[this->counter] = atof(this->curVals.c_str());
-  }
-  counter++;
-  if (counter >= 6)
-  {
-    counter = 0;
-    //send to extrap & interp
-    float newY = Extrapolate(this->yPosArray);
-    float newZ = Extrapolate(this->zPosArray);
-
-    float angleX = Interpolate(newY, this->camera->GetWorldPose(), 1);
-
-    this->camera->RotatePitch(angleX);
-    
-    //Interpolate(newZ, this->camera->GetWorldPose(), 2);
-
-  }
-
   cv::Mat blah(
     cv::Size(_width, _height),
-    CV_8UC3, (unsigned char *)_image
-  );
+    CV_8UC3, (unsigned char *)_image);
   //cv:cvtColor(image, continuousRBGA, CV_BGR2RGB, 3);
 
   outputVideo.write(blah);
 }
-
-
 
 
 

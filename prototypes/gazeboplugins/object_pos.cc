@@ -3,8 +3,6 @@
 #include <gazebo/physics/physics.hh>
 #include <gazebo/common/common.hh>
 #include <stdio.h>
-#include <iostream>
-#include <fstream>
 
 namespace gazebo
 {
@@ -15,8 +13,10 @@ namespace gazebo
             
       // Store the pointer to the world
       this->world = _world;
-      //this->objPosY.open("/home/samholmes/SEP-CTs/prototypes/gazeboplugins/objPosY.txt");
-      //this->objPosZ.open("/home/samholmes/SEP-CTs/prototypes/gazeboplugins/objPosZ.txt");
+      
+      transport::NodePtr node(new transport::Node());
+      node->Init(_world->GetName());
+      this->posePub = node->Advertise<msgs::Pose>("~/test");
 
       this->model = this->world->GetModel("box");
       // Listen to the update event. This event is broadcast every
@@ -28,16 +28,14 @@ namespace gazebo
     // Called by the world update start event
     public: void OnUpdate(const common::UpdateInfo & /*_info*/)
     {
-      //math::Pose pose = this->model->GetWorldPose();
-      //objPosY << pose.pos.y << std::endl;
-      //objPosZ << pose.pos.z << std::endl;
+      math::Pose pose = this->model->GetWorldPose();
+      msgs::Pose poseMsg = msgs::Convert(pose);
+      this->posePub->Publish(poseMsg);
     }
 
     private: physics::ModelPtr model;
 
-    private: std::ofstream objPosZ;
-    private: std::ofstream objPosY;
-
+    private: transport::PublisherPtr posePub;
     // Pointer to the model
     private: physics::WorldPtr world;
 

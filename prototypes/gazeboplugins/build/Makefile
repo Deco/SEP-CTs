@@ -109,6 +109,19 @@ camera_feed/fast:
 .PHONY : camera_feed/fast
 
 #=============================================================================
+# Target rules for targets named camera_push
+
+# Build rule for target.
+camera_push: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_push
+.PHONY : camera_push
+
+# fast build rule for target.
+camera_push/fast:
+	$(MAKE) -f CMakeFiles/camera_push.dir/build.make CMakeFiles/camera_push.dir/build
+.PHONY : camera_push/fast
+
+#=============================================================================
 # Target rules for targets named hello_world
 
 # Build rule for target.
@@ -170,6 +183,30 @@ camera_feed.s: camera_feed.cc.s
 camera_feed.cc.s:
 	$(MAKE) -f CMakeFiles/camera_feed.dir/build.make CMakeFiles/camera_feed.dir/camera_feed.cc.s
 .PHONY : camera_feed.cc.s
+
+camera_push.o: camera_push.cc.o
+.PHONY : camera_push.o
+
+# target to build an object file
+camera_push.cc.o:
+	$(MAKE) -f CMakeFiles/camera_push.dir/build.make CMakeFiles/camera_push.dir/camera_push.cc.o
+.PHONY : camera_push.cc.o
+
+camera_push.i: camera_push.cc.i
+.PHONY : camera_push.i
+
+# target to preprocess a source file
+camera_push.cc.i:
+	$(MAKE) -f CMakeFiles/camera_push.dir/build.make CMakeFiles/camera_push.dir/camera_push.cc.i
+.PHONY : camera_push.cc.i
+
+camera_push.s: camera_push.cc.s
+.PHONY : camera_push.s
+
+# target to generate assembly for a file
+camera_push.cc.s:
+	$(MAKE) -f CMakeFiles/camera_push.dir/build.make CMakeFiles/camera_push.dir/camera_push.cc.s
+.PHONY : camera_push.cc.s
 
 hello_world.o: hello_world.cc.o
 .PHONY : hello_world.o
@@ -250,6 +287,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... camera_feed"
+	@echo "... camera_push"
 	@echo "... edit_cache"
 	@echo "... hello_world"
 	@echo "... model_push"
@@ -258,6 +296,9 @@ help:
 	@echo "... camera_feed.o"
 	@echo "... camera_feed.i"
 	@echo "... camera_feed.s"
+	@echo "... camera_push.o"
+	@echo "... camera_push.i"
+	@echo "... camera_push.s"
 	@echo "... hello_world.o"
 	@echo "... hello_world.i"
 	@echo "... hello_world.s"

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/samholmes/SEP-CTs/prototypes/gazeboplugins/object_pos.cc
+/home/samholmes/SEP-CTs/prototypes/gazeboplugins/camera_push.cc
 boost/bind.hpp
 -
 gazebo/gazebo.hh

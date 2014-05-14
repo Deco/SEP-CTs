@@ -44,6 +44,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/camera_feed.dir/DependInfo.cmake"
+  "CMakeFiles/camera_push.dir/DependInfo.cmake"
   "CMakeFiles/hello_world.dir/DependInfo.cmake"
   "CMakeFiles/model_push.dir/DependInfo.cmake"
   "CMakeFiles/object_pos.dir/DependInfo.cmake"

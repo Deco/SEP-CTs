@@ -85,13 +85,48 @@ clean: CMakeFiles/camera_feed.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/camera_push.dir
+
+# All Build rule for target.
+CMakeFiles/camera_push.dir/all:
+	$(MAKE) -f CMakeFiles/camera_push.dir/build.make CMakeFiles/camera_push.dir/depend
+	$(MAKE) -f CMakeFiles/camera_push.dir/build.make CMakeFiles/camera_push.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles  2
+	@echo "Built target camera_push"
+.PHONY : CMakeFiles/camera_push.dir/all
+
+# Include target in all.
+all: CMakeFiles/camera_push.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/camera_push.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/camera_push.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles 0
+.PHONY : CMakeFiles/camera_push.dir/rule
+
+# Convenience name for target.
+camera_push: CMakeFiles/camera_push.dir/rule
+.PHONY : camera_push
+
+# clean rule for target.
+CMakeFiles/camera_push.dir/clean:
+	$(MAKE) -f CMakeFiles/camera_push.dir/build.make CMakeFiles/camera_push.dir/clean
+.PHONY : CMakeFiles/camera_push.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/camera_push.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/hello_world.dir
 
 # All Build rule for target.
 CMakeFiles/hello_world.dir/all:
 	$(MAKE) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/depend
 	$(MAKE) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles  3
 	@echo "Built target hello_world"
 .PHONY : CMakeFiles/hello_world.dir/all
 
@@ -126,7 +161,7 @@ clean: CMakeFiles/hello_world.dir/clean
 CMakeFiles/model_push.dir/all:
 	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/depend
 	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles  4
 	@echo "Built target model_push"
 .PHONY : CMakeFiles/model_push.dir/all
 
@@ -161,7 +196,7 @@ clean: CMakeFiles/model_push.dir/clean
 CMakeFiles/object_pos.dir/all:
 	$(MAKE) -f CMakeFiles/object_pos.dir/build.make CMakeFiles/object_pos.dir/depend
 	$(MAKE) -f CMakeFiles/object_pos.dir/build.make CMakeFiles/object_pos.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles  5
 	@echo "Built target object_pos"
 .PHONY : CMakeFiles/object_pos.dir/all
 

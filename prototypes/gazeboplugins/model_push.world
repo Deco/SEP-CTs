@@ -5,7 +5,6 @@
     <physics type='ode'>
       <real_time_update_rate>60</real_time_update_rate>
     </physics>
-    
     <plugin name="object_pos" filename="build/libobject_pos.so" />
 
     <include>
@@ -44,6 +43,8 @@
         </sensor>
 
       </link>
+      <plugin name="camera_push" filename="build/libcamera_push.so"/>
+
     </model>
 
     <model name="box">

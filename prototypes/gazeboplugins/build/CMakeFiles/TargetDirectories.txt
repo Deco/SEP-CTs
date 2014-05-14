@@ -1,4 +1,5 @@
 /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles/camera_feed.dir
+/home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles/camera_push.dir
 /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles/hello_world.dir
 /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles/model_push.dir
 /home/samholmes/SEP-CTs/prototypes/gazeboplugins/build/CMakeFiles/object_pos.dir
